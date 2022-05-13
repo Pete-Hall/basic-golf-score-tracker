@@ -1,0 +1,24 @@
+{
+  "name": "basic-golf-score-tracker",
+  "version": "1.0.0",
+  "description": "## Tasks - [x] set up folders and files - [ ] ```npm init --y npm install express npm install pg```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pete-Hall/basic-golf-score-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pete-Hall/basic-golf-score-tracker/issues"
+  },
+  "homepage": "https://github.com/Pete-Hall/basic-golf-score-tracker#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pg": "^8.7.3"
+  }
+}
