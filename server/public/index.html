@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Golf Score Tracker</title>
+</head>
+<body>
+  <h1>Basic Golf Score Tracker</h1>
+  <div id="inputDiv">
+    <input id="dateIn" type="date" value="">
+    <input id="courseIn" type="text" placeholder="Golf Course">
+    <input id="parCourseIn" type="number" placeholder="Par for course">
+    <input id="frontNineIn" type="number" placeholder="Front 9 score">
+    <input id="backNineIn" type="number" placeholder="Back 9 score">
+    <input id="totalScoreIn" type="number" placeholder="Total score">
+    <button id="addScoreButton">Add Score</button>
+  </div>
+  <div id="outputDiv">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Course</th>
+          <th>Par for Course</th>
+          <th>Front 9</th>
+          <th>Back 9</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="dataOut">
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
