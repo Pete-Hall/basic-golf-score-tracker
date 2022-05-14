@@ -2,6 +2,7 @@ $(document).ready(onReady);
 
 function onReady() {
   $('#addScoreButton').on('click', addScore);
+  getScores();
 }
 
 function addScore() {
@@ -24,6 +25,7 @@ function addScore() {
   }).then(function(response){
     console.log('back from /golf POST:', response);
     // display scores on DOM
+    getScores();
     // clear user inputs
     $('#dateIn').val('');
     $('#courseIn').val('');
@@ -36,3 +38,30 @@ function addScore() {
     alert('error adding new score');
   })
 }
+
+function getScores() {
+  console.log('in getScores');
+  $.ajax({
+    method: 'GET',
+    url: '/golf'
+  }).then(function(response){
+    console.log('back from /golf GET:', response);
+    let el = $('#dataOut');
+    el.empty();
+    for(let i=0; i<response.length; i++) {
+      el.append(`<tr><td>${response[i].date}</td><td>${response[i].course}</td><td>${response[i].par}</td><td>${response[i].frontNine}</td><td>${response[i].backNine}</td><td>${response[i].total}</td></tr>`)
+    }
+  }).catch(function(err){
+    console.log(err);
+    alert('error getting scores');
+  })
+}
+
+// let newScore = {
+//   date: $('#dateIn').val(),
+//   course: $('#courseIn').val(),
+//   par: $('#parCourseIn').val(),
+//   frontNine: $('#frontNineIn').val(),
+//   backNine: $('#backNineIn').val(),
+//   total: $('#totalScoreIn').val()
+// };
