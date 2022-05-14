@@ -6,7 +6,7 @@
 - [x] set up client interface
 - [x] set up date input as a calendar someone can pick from
 - [x] set up server and initial route
-- [ ] add the ability to add a new score (interface --> database)
+- [ ] add the ability to add a new score (interface --> database) - CREATE A NEW BRANCH FOR THIS
 
 
 - [ ] data validation to check if front 9 + back 9 = total
