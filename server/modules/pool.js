@@ -1,7 +1,7 @@
 const pg = require('pg');
 
 const pool = new pg.Pool({
-  database: 'basic_golf_score_inventory',
+  database: 'basic_golf_score_tracker',
   host: 'localhost',
   port: 5432,
   max: 12,

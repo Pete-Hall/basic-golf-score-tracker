@@ -49,7 +49,7 @@ function getScores() {
     let el = $('#dataOut');
     el.empty();
     for(let i=0; i<response.length; i++) {
-      el.append(`<tr><td>${response[i].date}</td><td>${response[i].course}</td><td>${response[i].par}</td><td>${response[i].frontNine}</td><td>${response[i].backNine}</td><td>${response[i].total}</td></tr>`)
+      el.append(`<tr><td>${response[i].date}</td><td>${response[i].course}</td><td>${response[i].par}</td><td>${response[i].front_nine}</td><td>${response[i].back_nine}</td><td>${response[i].total}</td></tr>`)
     }
   }).catch(function(err){
     console.log(err);

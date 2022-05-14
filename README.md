@@ -8,9 +8,10 @@
 - [x] set up server and initial route
 - [x] add the ability to add a new score (interface --> server)
 - [x] add the ability to get the scores (server --> interface)
-- [ ] create pool.js
-- [ ] set up database in Postico
-- [ ] connect server to database
+- [x] create pool.js
+- [x] set up database in Postico + test queries
+- [x] connect GET routes to database
+- [ ] connect POST routes to database
 
 
 - [ ] data validation to check if front 9 + back 9 = total

@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../modules/pool');
 
-let scores = [];
 
 router.post('/', (req, res)=>{
   console.log('in /golf POST:', req.body);
@@ -12,7 +11,13 @@ router.post('/', (req, res)=>{
 
 router.get('/', (req, res)=>{
   console.log('in /golf GET');
-  res.send(scores);
+  const queryString = `SELECT * FROM scores;`;
+  pool.query(queryString).then((result)=>{
+    res.send(result.rows);
+  }).catch((err)=>{
+    console.log(err);
+    res.sendStatus(500);
+  })
 })
 
 module.exports = router;
