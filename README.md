@@ -12,9 +12,9 @@
 - [x] set up database in Postico + test queries
 - [x] connect GET routes to database
 - [x] connect POST routes to database
+- [x] add some CSS styling (golf/Masters themed)
 
-
-- [ ] add CSS styling (golf/Masters themed?)
+- [ ] add more to CSS styling (input fields, maybe an image or something at the top, bigger h1 font)
 - [ ] data validation to check if front 9 + back 9 = total
 - [ ] spin up on Heroku server
 - [ ] add delete button functionality
