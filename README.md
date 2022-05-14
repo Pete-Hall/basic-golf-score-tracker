@@ -14,6 +14,7 @@
 - [x] connect POST routes to database
 
 
+- [ ] add CSS styling (golf/Masters themed?)
 - [ ] data validation to check if front 9 + back 9 = total
 - [ ] spin up on Heroku server
 - [ ] add delete button functionality

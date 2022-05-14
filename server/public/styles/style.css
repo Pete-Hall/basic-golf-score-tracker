@@ -1,0 +1,39 @@
+body {
+  margin: auto;
+  width: 54%;
+  font-family: serif;
+}
+
+h1 {
+  color: #076652;
+  font-style: italic;
+}
+
+button {
+  background-color: #b41632;
+  color: white;
+  font-family: serif;
+}
+
+#inputDiv {
+  background-color: #ffdf00;
+  padding: 15px 15px 15px 15px;
+  border: 2px solid #076652;
+}
+
+table, th, td {
+  margin-top: 15px;
+  border: 2px solid #076652;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+
+th {
+  background-color: #076652;
+  color: white;
+}
+
