@@ -11,7 +11,7 @@
 - [x] create pool.js
 - [x] set up database in Postico + test queries
 - [x] connect GET routes to database
-- [ ] connect POST routes to database
+- [x] connect POST routes to database
 
 
 - [ ] data validation to check if front 9 + back 9 = total
