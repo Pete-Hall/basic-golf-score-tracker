@@ -15,6 +15,7 @@
 - [x] add some CSS styling (golf/Masters themed)
 - [x] data validation to make sure all inputs are filled in before sending to POST
 - [x] data validation to check if front 9 + back 9 = total before sending to POST
+- [x] code comments to describe what I'm doing!
 
 - [ ] add more to CSS styling (input fields, bigger h1 font)
 - [ ] spin up on Heroku server
@@ -23,3 +24,5 @@
 - [ ] add filter/search functionality
 
 - [ ] script to add current day to the date input value?
+
+- [ ] fancier readme

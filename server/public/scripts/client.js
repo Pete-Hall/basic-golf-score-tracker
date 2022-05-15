@@ -1,10 +1,12 @@
 $(document).ready(onReady);
 
+// event handlers
 function onReady() {
   $('#addScoreButton').on('click', addScore);
   getScores();
 }
 
+// addScore sends the user inputted score to the backend via an AJAX POST call. Before sending, it validates the inputted user info. If the score is added successfully, the DOM is updated. 
 function addScore() {
   console.log('in addScore');
   // get user input and save in object
@@ -17,11 +19,13 @@ function addScore() {
     total: $('#totalScoreIn').val()
   };
   console.log('adding:', newScore);
+  // check if the inputted data is missing a field
   if(newScore.date === '' || newScore.course === '' || newScore.par === '' || newScore.frontNine === '' || newScore.backNine === '' || newScore.total === '') {
     console.log('incomplete form submission');
     alert('Score not added. Incomplete form submission.');
     return false;
   };
+  // check if the front nine score + the back nine score = the total score
   if((+newScore.frontNine) + (+newScore.backNine) != (+newScore.total)) {
     console.log('inaccurate score reporting');
     alert('Score not added. Inaccurate score reporting.');
@@ -49,6 +53,7 @@ function addScore() {
   })
 }
 
+// getScore retrieves the scores from the backend via an AJAX GET request. It then appends the data from the database onto the DOM in the output table
 function getScores() {
   console.log('in getScores');
   $.ajax({
@@ -66,12 +71,3 @@ function getScores() {
     alert('error getting scores');
   })
 }
-
-// let newScore = {
-//   date: $('#dateIn').val(),
-//   course: $('#courseIn').val(),
-//   par: $('#parCourseIn').val(),
-//   frontNine: $('#frontNineIn').val(),
-//   backNine: $('#backNineIn').val(),
-//   total: $('#totalScoreIn').val()
-// };
