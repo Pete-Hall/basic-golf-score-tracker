@@ -13,10 +13,13 @@
 - [x] connect GET routes to database
 - [x] connect POST routes to database
 - [x] add some CSS styling (golf/Masters themed)
+- [x] data validation to make sure all inputs are filled in before sending to POST
+- [x] data validation to check if front 9 + back 9 = total before sending to POST
 
-- [ ] add more to CSS styling (input fields, maybe an image or something at the top, bigger h1 font)
-- [ ] data validation to check if front 9 + back 9 = total
+- [ ] add more to CSS styling (input fields, bigger h1 font)
 - [ ] spin up on Heroku server
+
 - [ ] add delete button functionality
 - [ ] add filter/search functionality
+
 - [ ] script to add current day to the date input value?

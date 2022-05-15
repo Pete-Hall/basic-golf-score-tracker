@@ -17,6 +17,16 @@ function addScore() {
     total: $('#totalScoreIn').val()
   };
   console.log('adding:', newScore);
+  if(newScore.date === '' || newScore.course === '' || newScore.par === '' || newScore.frontNine === '' || newScore.backNine === '' || newScore.total === '') {
+    console.log('incomplete form submission');
+    alert('Score not added. Incomplete form submission.');
+    return false;
+  };
+  if((+newScore.frontNine) + (+newScore.backNine) != (+newScore.total)) {
+    console.log('inaccurate score reporting');
+    alert('Score not added. Inaccurate score reporting.');
+    return false;
+  };
   // send object to server in data of a POST call
   $.ajax({
     method: 'POST',
