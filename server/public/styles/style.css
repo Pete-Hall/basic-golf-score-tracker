@@ -6,10 +6,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* #headingDiv {
-  display: flex;
-} */
-
 img {
   width: 33%;
   flex-grow: 1;
@@ -29,6 +25,9 @@ button {
   background-color: #b41632;
   color: white;
   font-family: serif;
+  font-size: medium;
+  border: none;
+  padding: 5px 5px;
 }
 
 #inputDiv {
@@ -45,7 +44,7 @@ table, th, td {
 }
 
 th, td {
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px;
   text-align: center;
 }
 
@@ -54,3 +53,11 @@ th {
   color: white;
 }
 
+input {
+  padding: 5px 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-family: serif;
+  font-size: medium;
+  border: none;
+}
