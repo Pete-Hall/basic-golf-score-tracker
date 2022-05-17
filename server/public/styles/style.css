@@ -28,13 +28,17 @@ button {
   font-size: medium;
   border: none;
   padding: 5px 5px;
+  transition-duration: 35ms;
+}
+
+button:hover {
+  background-color: #b41633ad;
 }
 
 #inputDiv {
   background-color: #ffdf00;
   padding: 15px 15px 15px 15px;
   border: 2px solid #076652;
-  /* margin-top: -50px; */
 }
 
 table, th, td {
@@ -60,4 +64,8 @@ input {
   font-family: serif;
   font-size: medium;
   border: none;
+}
+
+#averagesOut {
+  font-weight: bold;
 }

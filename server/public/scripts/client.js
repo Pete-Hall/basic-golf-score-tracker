@@ -63,9 +63,26 @@ function getScores() {
     console.log('back from /golf GET:', response);
     let el = $('#dataOut');
     el.empty();
+    let parTotal = 0;
+    let frontTotal = 0;
+    let backTotal = 0;
+    let totalTotal = 0;
+    let counter = 0;
     for(let i=0; i<response.length; i++) {
       el.append(`<tr><td>${response[i].date}</td><td>${response[i].course}</td><td>${response[i].par}</td><td>${response[i].front_nine}</td><td>${response[i].back_nine}</td><td>${response[i].total}</td></tr>`)
-    }
+      parTotal += (+response[i].par);
+      frontTotal += (+response[i].front_nine);
+      backTotal += (+response[i].back_nine);
+      totalTotal += (+response[i].total);
+      counter ++;
+    };
+    let parAvg = parTotal / counter;
+    let frontAvg = frontTotal / counter;
+    let backAvg = backTotal / counter;
+    let totalAvg = totalTotal / counter;
+    let elAvg = $('#averagesOut');
+    elAvg.empty();
+    elAvg.append(`<tr><td></td><td>Averages:</td><td>${parAvg.toFixed(2)}</td><td>${frontAvg.toFixed(2)}</td><td>${backAvg.toFixed(2)}</td><td>${totalAvg.toFixed(2)}</td></tr>`);
   }).catch(function(err){
     console.log(err);
     alert('error getting scores');

@@ -17,10 +17,10 @@
 - [x] data validation to check if front 9 + back 9 = total before sending to POST
 - [x] code comments to describe what I'm doing!
 - [x] add more to CSS styling (input fields)
+- [x] create AVG row at the bottom of the table for the approrpriate columns
 
 - [ ] spin up on Heroku server
 
-- [ ] create AVG row at the very bottom for the approrpriate columns
 - [ ] return scores from database in latest --> earliest dates
 - [ ] look into responsive web design https://www.w3schools.com/css/css_website_layout.asp
 
