@@ -1,32 +1,34 @@
 # Basic Golf Score Tracker
 
-## Tasks
-- [x] set up folders and files
-- [x] ```npm init --y npm install express npm install pg```
-- [x] set up client interface
-- [x] set up date input as a calendar someone can pick from
-- [x] set up server and initial route
-- [x] add the ability to add a new score (interface --> server)
-- [x] add the ability to get the scores (server --> interface)
-- [x] create pool.js
-- [x] set up database in Postico + test queries
-- [x] connect GET routes to database
-- [x] connect POST routes to database
-- [x] add some CSS styling (golf/Masters themed)
-- [x] data validation to make sure all inputs are filled in before sending to POST
-- [x] data validation to check if front 9 + back 9 = total before sending to POST
-- [x] code comments to describe what I'm doing!
-- [x] add more to CSS styling (input fields)
-- [x] create AVG row at the bottom of the table for the approrpriate columns
+## Description
 
-- [ ] spin up on Heroku server
+This application helps the user keep track of their golf scores. Users can input relevant information to their round and a history of all scores will be shown.
 
-- [ ] return scores from database in latest --> earliest dates
-- [ ] look into responsive web design https://www.w3schools.com/css/css_website_layout.asp
+## Interface
 
-- [ ] add delete button functionality
-- [ ] add filter/search functionality
+![wireframes](wireframes/Screen%20Shot%202022-07-16%20at%203.45.18%20PM.png)
 
-- [ ] script to add current day to the date input value?
+## Installation
 
-- [ ] fancier readme
+([Node.js](https://nodejs.org/en/) is used in this project)
+
+To locally run the project...
+
+1. Create a database named `basic_golf_score_tracker`,
+2. The queries in the `database.sql` file are set up to create all the necessary tables and populate those tables with some sample feedack. The project is built on [Postgres](https://www.postgresql.org/download/), so you will need to make sure to have that installed. Using Postico is recommended to run those queries as that was used to create the queries 
+3. Open up your code editor of choice and run `npm install` in your terminal to install the necessary dependencies
+4. Run `node server/server.js` in your terminal to start up the server
+5. In your browser go to `localhost:5001` to view the application
+
+## Built with...
+
+- JavaScript
+- jQuery
+- HTML
+- CSS
+- Express
+- Node.js
+
+## Acknowledgement
+
+Thanks to [Prime Digital Academy](www.primeacademy.io)!
